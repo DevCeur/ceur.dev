@@ -1,0 +1,23 @@
+.external_link {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  font-size: 0.85rem;
+  font-weight: 400;
+
+  transition: all 150ms ease-in-out;
+}
+
+.external_link:hover {
+  color: var(--fg-heading);
+}
+
+.external_link svg {
+  transition: all 150ms ease-in-out;
+}
+
+.external_link:hover svg {
+  stroke: var(--fg-heading);
+}

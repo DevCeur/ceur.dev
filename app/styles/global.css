@@ -1,0 +1,43 @@
+@import url(./reset.css);
+@import url(./theme.css);
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/manrope-var.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url("/fonts/share-tech-mono.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  font-family: var(--share-tech-font);
+  color: var(--fg-body-primary);
+}
+
+body {
+  color: var(--fg-body-primary);
+  font-size: var(--body-default);
+
+  background-color: var(--bg-primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--fg-heading);
+
+  line-height: 1.15;
+  font-family: var(--geist-font);
+  font-weight: 500;
+}
+
+p {
+  font-family: var(--share-tech-font);
+}

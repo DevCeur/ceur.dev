@@ -1,0 +1,14 @@
+:root {
+  --bg-primary: #101010;
+  --bg-overlay: #0a0a0a;
+
+  --fg-heading: #ffedd5;
+  --fg-body-primary: #a1a1aa;
+  --fg-body-secondary: #404040;
+
+  --guide-border-color: rgba(255, 251, 235, 0.035);
+
+  --geist-font: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    sans-serif;
+  --share-tech-font: "Share Tech Mono", monospace;
+}
