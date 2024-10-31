@@ -1,7 +1,19 @@
+import type { MetaFunction } from "@remix-run/react";
+
 import { GridWrapper } from "~/components/grid-wrapper";
 import { ExternalLink } from "~/components/external-link";
 
 import styles from "./route.module.css";
+
+export const meta: MetaFunction = () => [
+  { title: "Carlos Umaña" },
+  { property: "og:title", content: "Carlos Umaña" },
+  {
+    name: "description",
+    content:
+      "Hi, I’m Carlos Umaña (Ceur), passionate Software Engineer currently based in Cali, Colombia. Focused on the web and building great stuff with code. Volleyball player (Opposite Hitter), writer, gamer and a proud Chimuelo’s father.",
+  },
+];
 
 export default function HomeRoute() {
   return (
@@ -20,8 +32,10 @@ export default function HomeRoute() {
             </p>
 
             <div className={styles.social_links}>
-              <ExternalLink href="https://github.com/DevCeur">GitHub</ExternalLink>
-              <ExternalLink href="https://github.com/DevCeur">LinkedIn</ExternalLink>
+              <ExternalLink href="https://www.github.com/DevCeur">GitHub</ExternalLink>
+              <ExternalLink href="https://www.linkedin.com/in/dev-carlos-umana/">
+                LinkedIn
+              </ExternalLink>
             </div>
           </div>
         </GridWrapper>

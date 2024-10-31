@@ -10,7 +10,12 @@ interface ExternalLink extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const ExternalLink = ({ children, ...anchorProps }: ExternalLink) => {
   return (
-    <a {...anchorProps} className={styles.external_link}>
+    <a
+      {...anchorProps}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.external_link}
+    >
       {children}
       <LinkIcon width={12} />
     </a>
